@@ -3,9 +3,17 @@
         <title>Bragaboo Limited | Software Architecture, Design and Delivery made easy</title>
     </head>
     <body>
-        <img src="img/Home.png" width="100%" height="auto"/>
+        <img id="id-img-main" src="img/Home.png" width="100%" height="auto"
+        onclick="log()"/>
     </body>
 
+
+    <script>
+        function log() {
+            const imgElement = document.querySelector("#id-img-main");
+            imgElement.setAttribute("src", "img/Our Services.png")
+        }
+    </script>
 
 </html>
 
