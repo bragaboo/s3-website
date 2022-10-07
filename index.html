@@ -11,7 +11,16 @@
     <script>
         function log() {
             const imgElement = document.querySelector("#id-img-main");
-            imgElement.setAttribute("src", "img/Our Services.png")
+            const currentImg = imgElement.getAttribute("src");
+            if (currentImg === "img/Home.png") {
+                imgElement.setAttribute("src", "img/Our Services.png")
+            }
+            if (currentImg === "img/Our Services.png") {
+                imgElement.setAttribute("src", "img/Contact Us.png")
+            }
+            if (currentImg === "img/Contact Us.png") {
+                imgElement.setAttribute("src", "img/Home.png")
+            }
         }
     </script>
 
